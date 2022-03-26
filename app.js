@@ -2,9 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-const userRouter = require("./src/routes/user.route");
-const studentRouter = require("./src/routes/student.route");
-const tokenRouter = require("./src/routes/token.route");
+const userRouter = require("./src/routes/user");
+const studentRouter = require("./src/routes/student");
+const tokenRouter = require("./src/routes/token");
 
 //connection to mongodb
 require("./src/database/connection");
